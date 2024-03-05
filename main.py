@@ -1,10 +1,8 @@
 from prompts.input import get_input, get_class_input
 
 def main():
-    num_crawlers = int(input("How many crawlers? "))
+    num_crawlers = get_input("How many crawlers? ", int, 1)
     
-    #Escape check for non-integers
-
     for i in range(num_crawlers):
         class_choice = get_class_input()
         min_level = get_input("What is the minimum level for your crawler? (leave empty for 1)", int, 1)
