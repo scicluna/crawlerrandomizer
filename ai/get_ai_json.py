@@ -43,7 +43,7 @@ def generate_ai_prompt(crawler_name: str, crawler_class: str, crawler_level: int
         In 2020, the Earth was "flattened," reducing its population by 99.99999%. The survivors find themselves in two categories: those who remained on the surface, and those who ventured into "The Crawl." "The Crawl" is not just a dungeon; it's an interstellar pay-per-view television event watched by countless alien civilizations. This dungeon is bizarre, merciless, and sadistic, designed for entertainment. Participants who reach the end win, reclaiming some of what humanity lost. 
 
         This crawler, who is called {crawler_name}, has only braved the following floors:
-        Floor One: The first floor of "The Crawl" is like a classic fantasy dungeon crawl filled with odd low-leveled creatures that are grouped by "neighborhoods". "Neigborhoods" are guarded by powerful neighborhood bosses. The floor is straight forward, with each neighborhood haivng its own theme.
+        Floor One: The first floor of "The Crawl" is like a classic fantasy dungeon crawl filled with odd low-leveled creatures that are grouped by "neighborhoods". Each neighborhood is named after its primary mob and something that mob is known for (format: [verb]ing [fantasy monster] neighborhood). "Neigborhoods" are guarded by powerful neighborhood bosses. The floor is straight forward, with each neighborhood haivng its own theme.
 
         Within this context, create a detailed profile for a Dungeon Crawl Classics character. The character, used to be a normal human, but was assigned the class: "{crawler_class}" and at level {crawler_level} out of 10 in their daunting journey, is one of the daring crawlers. 
         The character's stats are as follows:

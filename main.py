@@ -13,13 +13,13 @@ def main():
         class_choice = get_class_input()
         
         min_level = get_input("What is the minimum level for your crawler? (leave empty for 1)", int, 1)
-        max_level = get_input("What is the maximum level for your crawler? (leave empty for 10)", int, 10)
+        max_level = get_input("What is the maximum level for your crawler? (leave empty for 1)", int, 1)
         ai_detailed = get_input("Do you want more detailed AI? y/n (leave empty for n)", str, "n")
 
         level = random_level(min_level, max_level)
 
         crawler = Crawler(crawler_name, class_choice, ai_detailed, level )
-        save_crawler_profile(crawler, f"{crawler.crawler_name}_{max(random.randint(1,10) - random.randint(1,5), 1)}.md")
+        save_crawler_profile(crawler, f"{crawler.crawler_name}_{max(random.randint(1,20) - random.randint(1,10), 1)}.md")
 
 if __name__ == "__main__":
     main()
