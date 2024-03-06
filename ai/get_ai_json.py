@@ -1,10 +1,10 @@
 import json
-from openai import OpenAI
 import os
-from dotenv import load_dotenv
-import certifi
-certifi.where()
 import httpx
+
+from openai import OpenAI
+from dotenv import load_dotenv
+
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'), http_client=httpx.Client(verify=False))
