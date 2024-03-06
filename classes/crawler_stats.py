@@ -6,7 +6,7 @@ from lists.luck_signs import luck_signs_table
 
 class Stats:
     """A class to represent the stats of a crawler"""
-    def __init__(self, lvl):
+    def __init__(self, lvl: int):
         self.str = random_roll(3,6) + random.randint(1,4)
         self.agi = random_roll(3,6) + random.randint(1,4)
         self.sta = random_roll(3,6) + random.randint(1,4)

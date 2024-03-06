@@ -1,3 +1,0 @@
-def get_bio(lvl: int) -> dict:
-    """Generates a dictionary of bio information based on the level provided."""
-    ...

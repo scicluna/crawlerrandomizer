@@ -1,3 +1,0 @@
-def get_items(item_types: list) -> list:
-    """Generates a list of good items based on the item types provided."""
-    ...
