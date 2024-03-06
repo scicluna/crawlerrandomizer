@@ -3,7 +3,7 @@ A simple python program for generating plausbile DCC characters within the conte
 ## Setup
 Setup is simple. Just make sure you have python installed, and then install the dependancies using pip:
 ```
-    pip install openai 
+    pip install openai names
 ```
 If it warns you that you are missing any other packages, just install them with pip.
 
