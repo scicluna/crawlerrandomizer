@@ -45,6 +45,10 @@ def generate_markdown(crawler: Crawler) -> None:
         f"**Journey So Far:**\n"
         f"{crawler.crawler_bio.story}\n"
         f"**Twist:**\n"
-        f"{crawler.crawler_bio.twist}\n"
+        f"{crawler.crawler_bio.twist}\n\n"
+
+
+        f"## Special Abilities:\n"
+        f"{newline.join(f'- {ability}' for ability in crawler.crawler_bio.abilities)}\n"
     )
     return markdown_content

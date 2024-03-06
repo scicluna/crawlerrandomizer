@@ -21,10 +21,10 @@ class Stats:
         self.per_mod = mods[self.per]
         self.luc_mod = mods[self.luc]
 
-        self.hp = (lvl * self.sta_mod) + (lvl * random.randint(5,10))
-        self.ac = (10 + lvl + self.agi_mod + random.randint(1,4))
-        self.ref = self.agi_mod+lvl+random.randint(1,6)-random.randint(1,6)
-        self.fort = self.sta_mod+lvl+random.randint(1,6)-random.randint(1,6)
-        self.will = self.per_mod+lvl+random.randint(1,6)-random.randint(1,6)
+        self.hp = (random_roll(1,4)) + ((lvl+1) * self.sta_mod) + (lvl * random.randint(1,10))
+        self.ac = (10 + lvl + self.agi_mod + random.randint(1,4) + random.randint(1,lvl))
+        self.ref = self.agi_mod+lvl+max((random.randint(1,6)-random.randint(1,6)), 0)
+        self.fort = self.sta_mod+lvl+max((random.randint(1,6)-random.randint(1,6)), 0)
+        self.will = self.per_mod+lvl+max((random.randint(1,6)-random.randint(1,6)), 0)
 
         self.luck_sign = random.choice(luck_signs_table)

@@ -11,9 +11,10 @@ class Crawler:
         self.crawler_class = crawler_class
         self.crawler_level = crawler_level
 
-        ai_json = get_ai_json(crawler_class, crawler_level, random_item_types(crawler_level), ai_detailed)
-
         self.crawler_stats = Stats(crawler_level)
+
+        ai_json = get_ai_json(crawler_name, crawler_class, crawler_level, self.crawler_stats, random_item_types(crawler_level), ai_detailed)
+
         self.crawler_bio = Bio(ai_json)
         self.crawler_items = ai_json["good_items"]
     

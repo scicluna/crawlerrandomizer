@@ -8,3 +8,4 @@ class Bio:
         self.strengths = ai_json['strengths']
         self.weaknesses = ai_json['weaknesses']
         self.twist = ai_json['twist']
+        self.abilities = ai_json['abilities']
