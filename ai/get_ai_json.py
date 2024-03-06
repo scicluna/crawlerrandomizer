@@ -17,7 +17,7 @@ def get_ai_json(crawler_class: str, crawler_level: int, item_types: list, ai_det
     prompt = generate_ai_prompt(crawler_class, crawler_level, item_types)
     model = "gpt-4-1106-preview" if ai_detailed == "y" else "gpt-3.5-turbo-0125"
 
-    print(f"Generating AI response using {model}")
+    print(f"Generating AI response using {model}... Please Wait.")
     response = client.chat.completions.create(
     model= model,
     response_format={ "type": "json_object" },
