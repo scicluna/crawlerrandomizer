@@ -1,5 +1,5 @@
 import random
-from lists.item_slots import item_slots
+from lists.item_slots import item_slots_table
 
 
 def random_item_types(lvl: int) -> list[str]:
@@ -12,6 +12,6 @@ def random_item_types(lvl: int) -> list[str]:
         if rng == 1:
             continue
 
-        random_item_types.append(random.choice(item_slots))
+        random_item_types.append(random.choice(item_slots_table))
         
     return random_item_types

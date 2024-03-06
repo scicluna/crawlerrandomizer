@@ -1,5 +1,5 @@
 item_slots_table = [
-      "Sword",
+    "Sword",
     "Ring",
     "Bracers",
     "Amulet",

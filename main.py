@@ -15,4 +15,7 @@ def main():
         max_level = get_input("What is the maximum level for your crawler? (leave empty for 10)", int, 10)
         level = random_level(min_level, max_level)
 
-        generate_markdown(Crawler(crawler_name, class_choice, level))
+        crawler = Crawler(crawler_name, class_choice, level)
+
+if __name__ == "__main__":
+    main()
