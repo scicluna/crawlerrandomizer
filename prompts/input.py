@@ -2,7 +2,6 @@ from randomizers.random_class import random_class
 
 def get_input(prompt: str, type=str, default=None) -> any:
     """Prompts the user for an input of specified type. Returns the default if the input is empty."""
-    
     while True:
         input_value = input(prompt)
         
@@ -15,7 +14,6 @@ def get_input(prompt: str, type=str, default=None) -> any:
 
 def get_class_input() -> str:
     """Prompts the user for a class input. Returns a random class if the input is empty."""
-
     while True:
         input_value = input("What class is this crawler? (leave empty for random)")
 

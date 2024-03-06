@@ -3,6 +3,7 @@ from markdown import generate_markdown
 from prompts.input import get_input, get_class_input
 from randomizers.random_level import random_level
 
+
 def main():
     num_crawlers = get_input("How many crawlers? ", int, 1)
     
@@ -13,9 +14,12 @@ def main():
         
         min_level = get_input("What is the minimum level for your crawler? (leave empty for 1)", int, 1)
         max_level = get_input("What is the maximum level for your crawler? (leave empty for 10)", int, 10)
+        ai_detailed = get_input("Do you want more detailed AI? y/n (leave empty for n)", str, "n")
+
         level = random_level(min_level, max_level)
 
-        crawler = Crawler(crawler_name, class_choice, level)
+        crawler = Crawler(crawler_name, class_choice, ai_detailed, level )
+
 
 if __name__ == "__main__":
     main()
