@@ -4,6 +4,7 @@ from classes.crawler_status import Status
 
 
 class Crawler:
+    """A class to represent a crawler"""
     def __init__(self, crawler_name: str, crawler_class: str, crawler_level: int):
         self.crawler_name = crawler_name
         self.crawler_class = crawler_class

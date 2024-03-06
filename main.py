@@ -1,4 +1,4 @@
-from generate import generate_crawler
+from classes.crawler import Crawler
 from markdown import generate_markdown
 from prompts.input import get_input, get_class_input
 from randomizers.random_level import random_level
@@ -15,5 +15,4 @@ def main():
         max_level = get_input("What is the maximum level for your crawler? (leave empty for 10)", int, 10)
         level = random_level(min_level, max_level)
 
-        crawler = generate_crawler(crawler_name, class_choice, level)
-        generate_markdown(crawler)
+        generate_markdown(Crawler(crawler_name, class_choice, level))

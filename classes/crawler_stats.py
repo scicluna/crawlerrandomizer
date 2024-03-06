@@ -1,5 +1,4 @@
 import random
-
 from randomizers.random_roll import random_roll 
 from lists.mods import mods
 from lists.luck_signs import luck_signs_table

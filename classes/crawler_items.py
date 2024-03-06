@@ -5,7 +5,7 @@ from lists.item_slots import item_slots_table
 
 class Items:
     def __init__(self, lvl):
-
+        """Generates a list of good items based on the crawler's level."""
         item_types = []
         for _ in range(lvl):
             item_types.append(random.choice(item_slots_table))
