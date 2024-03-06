@@ -19,7 +19,7 @@ def main():
         level = random_level(min_level, max_level)
 
         crawler = Crawler(crawler_name, class_choice, ai_detailed, level )
-
+        print(crawler)
 
 if __name__ == "__main__":
     main()
