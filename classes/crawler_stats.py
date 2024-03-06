@@ -7,12 +7,12 @@ from lists.luck_signs import luck_signs_table
 class Stats:
     """A class to represent the stats of a crawler"""
     def __init__(self, lvl: int):
-        self.str = random_roll(3,6) + random.randint(1,4)
-        self.agi = random_roll(3,6) + random.randint(1,4)
-        self.sta = random_roll(3,6) + random.randint(1,4)
-        self.int = random_roll(3,6) + random.randint(1,4)
-        self.per = random_roll(3,6) + random.randint(1,4)
-        self.luc = random_roll(3,6) + random.randint(1,4)
+        self.str = random_roll(3,6) + random.randint(1,lvl)
+        self.agi = random_roll(3,6) + random.randint(1,lvl)
+        self.sta = random_roll(3,6) + random.randint(1,lvl)
+        self.int = random_roll(3,6) + random.randint(1,lvl)
+        self.per = random_roll(3,6) + random.randint(1,lvl)
+        self.luc = random_roll(3,6) + random.randint(1,lvl)
 
         self.str_mod = mods[self.str]
         self.agi_mod = mods[self.agi]

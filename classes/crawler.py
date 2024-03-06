@@ -1,6 +1,5 @@
 from ai.get_ai_json import get_ai_json
 from classes.crawler_bio import Bio
-from classes.crawler_items import Items
 from classes.crawler_stats import Stats
 from randomizers.random_item_types import random_item_types
 
@@ -16,7 +15,7 @@ class Crawler:
 
         self.crawler_stats = Stats(crawler_level)
         self.crawler_bio = Bio(ai_json)
-        self.crawler_items = Items(ai_json)
+        self.crawler_items = ai_json["good_items"]
     
     def __str__(self):
         return f"{self.crawler_name} the {self.crawler_class} is a level {self.crawler_level} crawler with the following stats: \n" \

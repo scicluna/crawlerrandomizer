@@ -1,5 +1,6 @@
+import random
 from classes.crawler import Crawler
-from markdown import generate_markdown
+from markdown import save_crawler_profile
 from prompts.input import get_input, get_class_input
 from randomizers.random_level import random_level
 
@@ -19,7 +20,7 @@ def main():
         level = random_level(min_level, max_level)
 
         crawler = Crawler(crawler_name, class_choice, ai_detailed, level )
-        print(crawler)
+        save_crawler_profile(crawler, f"{crawler.crawler_name}_{random.randint(1,200)}.md")
 
 if __name__ == "__main__":
     main()

@@ -28,6 +28,6 @@ luck_signs_table = {
     27: "Unholy house: Corruption rolls",
     28: "The Broken Star: Fumbles**",
     29: "Birdsong: Number of languages",
-    30: "Wild child: Speed (each +1/-1 = +5’/-5’ speed)"
+    30: "Wild child: Speed (each +1/-1 = +5'/-5' speed)"
 }
 

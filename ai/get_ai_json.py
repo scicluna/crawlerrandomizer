@@ -53,7 +53,7 @@ def generate_ai_prompt(crawler_class: str, crawler_level: int, item_types: list)
         The character's profile should include a randomly chosen alignment (CH for Chaotic, LA for Lawful, N for Neutral), three distinctive personality traits, a brief background of their modern (the year is 2020) life before entering "The Crawl," and a concise narrative highlighting their key adventures and challenges faced so far in the game. Also, include three strengths and three weaknesses that define them. Finally, incorporate a twist that makes this character uniquely intriguing. Structure the generated information in JSON format as shown below:
 
         {{
-            "good_items": ["Example Item 1", "Example Item 2", "Example Item 3", "etc..."],
+            "good_items": ["Example Item 1: brief description", "Example Item 2: brief description", "Example Item 3: brief description", "etc..."],
             "alignment": "CH",
             "personality_traits": ["trait1", "trait2", "trait3"],
             "origin": "A brief sentence about their life before 'The Crawl'.",
