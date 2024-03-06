@@ -1,7 +1,7 @@
 A simple python program for generating plausbile DCC characters within the context of a modern-day isekai scenario.
 
 ## Setup
-Setup is simple. Just make sure you have python installed, and then install the dependancies using pip:
+Setup is simple. Just make sure you have python installed, and then install the dependencies using pip:
 ```
     pip install openai names
 ```
