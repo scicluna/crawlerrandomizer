@@ -34,6 +34,8 @@ def generate_markdown(crawler: Crawler) -> None:
         f"## Notable Items:\n"
         f"{newline.join(f'- {item}' for item in crawler.crawler_items)}\n\n"
         
+        f"## Consumables:\n"
+        f"{newline.join(f'- {consumable}' for consumable in crawler.crawler_consumables)}\n\n"
         
         f"## Bio:\n"
         f"**Alignment:** {crawler.crawler_bio.alignment}\n" 
